@@ -175,6 +175,91 @@ footer {
     font-size: 0.78rem;
 }
 
+.back-link {
+    color: var(--muted);
+    font-size: 0.78rem;
+    text-decoration: none;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+    color: var(--accent);
+}
+
+.detail-intro {
+    grid-template-columns: minmax(0, 1.1fr) minmax(240px, 0.9fr);
+    padding-bottom: 56px;
+}
+
+.detail-intro h1 {
+    font-size: clamp(3.8rem, 8vw, 7rem);
+}
+
+.detail-hero {
+    margin: 0 0 66px;
+}
+
+.detail-hero img {
+    width: 100%;
+    max-height: 620px;
+    display: block;
+    aspect-ratio: 1.8;
+    object-fit: cover;
+    background: #e4e0d7;
+}
+
+.detail-hero figcaption {
+    margin-top: 12px;
+    color: var(--muted);
+    font-size: 0.78rem;
+}
+
+.detail-content {
+    display: grid;
+    grid-template-columns: minmax(180px, 0.65fr) minmax(0, 1.35fr);
+    gap: 48px;
+    padding-bottom: 88px;
+}
+
+.detail-content h2 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    font-weight: 400;
+    letter-spacing: -0.055em;
+}
+
+.detail-copy {
+    max-width: 680px;
+}
+
+.detail-copy p {
+    margin: 0 0 20px;
+    color: #5d5c55;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.section-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 22px 0 30px;
+    border-top: 1px solid var(--line);
+}
+
+.section-nav a {
+    color: var(--accent);
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.section-nav a:hover,
+.section-nav a:focus-visible {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
 @media (max-width: 760px) {
     .page {
         width: min(100% - 44px, 560px);
@@ -194,6 +279,11 @@ footer {
         margin: 0;
     }
 
+    .detail-intro {
+        gap: 24px;
+        padding: 76px 0 40px;
+    }
+
     .projects {
         grid-template-columns: 1fr;
         gap: 46px;
@@ -206,6 +296,20 @@ footer {
 
     .project h2 {
         font-size: 2.2rem;
+    }
+
+    .detail-hero {
+        margin-bottom: 48px;
+    }
+
+    .detail-hero img {
+        aspect-ratio: 1.18;
+    }
+
+    .detail-content {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding-bottom: 60px;
     }
 }
 
