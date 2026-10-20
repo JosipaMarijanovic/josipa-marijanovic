@@ -90,9 +90,8 @@ h1 {
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    column-gap: 22px;
-    row-gap: 48px;
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 42px;
     padding-bottom: 92px;
 }
 
@@ -104,7 +103,7 @@ h1 {
 .image-wrap {
     position: relative;
     overflow: hidden;
-    aspect-ratio: 1.35;
+    aspect-ratio: 0.91;
     background: #e4e0d7;
 }
 
